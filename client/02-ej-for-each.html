@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app"></div>
+    <script>
+        const tasks = [
+        {
+          task: 'Tarea 1',
+          descp: 'Bajar a Kay',
+          done: false,
+        },
+        {
+          task: 'Tarea 2',
+          descp: 'Ir a la playa',
+          done: true,
+        },
+        {
+          task: 'Tarea 3',
+          descp: 'Bañarme',
+          done: false,
+        },
+        {
+          task: 'Tarea 4',
+          descp: 'Cenar',
+          done: true,
+        },
+      ];
+      
+      const app = document.getElementById('app');
+
+      tasks.forEach(task => {
+        app.innerHTML += `
+        <li> 
+          Nombre: ${task.task} ||  
+          Descripción: ${task.descp} - 
+          <input type="checkbox" ${task.done ? 'checked' : ''}/>
+        </li>`
+      });
+    </script>
+</body>
+</html>

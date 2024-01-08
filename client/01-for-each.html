@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app"></div>
+    <script>
+        const product = [
+            {title: "Burger", price: 222},
+            {title: "Pizza", price: 111}
+        ]
+        const app = document.getElementById('app');
+        product.forEach(product => {
+            app.innerHTML += `<li>${product.title} - ${product.price}</li>`
+        })
+    </script>
+</body>
+</html>
