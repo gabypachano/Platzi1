@@ -14,6 +14,11 @@ const orders = [
     total: 333,
     delivered: false,
   },
+  {
+    customerName: "Keky",
+    total: 444,
+    delivered: false,
+  },
 ];
 
 const nuevo = orders.map((item) => {
